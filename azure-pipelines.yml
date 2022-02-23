@@ -6,7 +6,7 @@
 trigger:
 - master
 
-pool: MyPool
+pool: Azure Pipelines
 
 steps:
 - task: NodeTool@0
@@ -17,5 +17,4 @@ steps:
 - script: |
     npm install
     npm run build
-    npm test
   displayName: 'npm install and build'
